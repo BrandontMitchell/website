@@ -3,9 +3,9 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-    <div>
-        Test
-    </div>
+        <div>
+            Test
+        </div>
     );
 };
 
