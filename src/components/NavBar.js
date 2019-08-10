@@ -12,18 +12,19 @@ function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
+      <div style={{backgroundColor: "#e0e2e6"}}>
     <Typography
       component="div"
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
-      style={{backgroundColor: '#e0e2e6'}}
       {...other}
       
     >
       <Box p={4}>{children}</Box>
     </Typography>
+    </div>
   );
 }
 
@@ -43,8 +44,6 @@ function a11yProps(index) {
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: '#7797d3',
-    alignContent: 'center',
   },
 }));
 
@@ -60,10 +59,10 @@ const NavBar = () => {
     <div className={classes.root}>
       <AppBar position="static">
         <Tabs centered='true' value={value} onChange={handleChange} aria-label="simple tabs example">
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-          <Tab label="Item Four" {...a11yProps(3)} />
+          <Tab label="Home" {...a11yProps(0)} />
+          <Tab label="About" {...a11yProps(1)} />
+          <Tab label="Hobbies" {...a11yProps(2)} />
+          <Tab label="Hack" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -84,13 +83,5 @@ const NavBar = () => {
     </div>
   );
 }
-
-// const NavBar = () => {
-//     return (
-//         <div>
-//             Test
-//         </div>
-//     );
-// };
 
 export default NavBar;
