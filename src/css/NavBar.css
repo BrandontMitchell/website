@@ -1,0 +1,30 @@
+.nav-container {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px #808080;
+    
+    @media only screen and (min-width: 600px) {
+        flex-direction: row;
+    }
+}
+nav a {
+    flex-grow: 1;
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    background-color: #267d92;
+    padding: 15px 20px ;
+    transition: background-color .5s;
+    
+}
+nav a :hover {
+    color: white;
+    background-color: darken(#267d92, 5%);
+}
