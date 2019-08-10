@@ -7,7 +7,6 @@ function App() {
     return (
         <div>
             <NavBar/>
-            <TerminalApp msg="Hello World"/>
         </div>
     );
 }
