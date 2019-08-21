@@ -5,7 +5,7 @@ const useStyles = makeStyles({
     card: {
       maxWidth: 345,
       textAlign: 'center',
-      alignContent: 'inline',
+      alignContent: 'center',
     },
     media: {
       height: 140,
@@ -16,7 +16,7 @@ const Header = () => {
     const classes = useStyles();
     return (
         <div className={classes.card}>
-            <h1>Brandon Mitchell</h1>
+            <h1 style={{textAlign: 'center'}}>Brandon Mitchell</h1>
         </div>
     );
 }

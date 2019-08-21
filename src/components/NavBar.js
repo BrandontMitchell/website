@@ -8,6 +8,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 function TabPanel(props) {
     const {
@@ -51,7 +52,7 @@ function a11yProps(index) {
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
     }
 }));
 
@@ -71,9 +72,12 @@ const NavBar = () => {
                 <Tabs centered='true'
                     value={value}
                     onChange={handleChange}
-                    aria-label="simple tabs example">
+                    variant="fullWidth"
+                    textColor="inherit"
+                    inicatorColor="secondary"
+                    aria-label="simpicon label tabs example">
                     <Tab label="Home" {...a11yProps(0)}/>
-                    <Tab label="About" {...a11yProps(1)}/>
+                    <Tab label="About" icon={<FavoriteIcon />} {...a11yProps(1)}/>
                     <Tab label="Hobbies" {...a11yProps(2)}/>
                     <Tab label="Hack" {...a11yProps(3)}/>
                 </Tabs>
