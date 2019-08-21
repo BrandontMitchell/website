@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import TerminalApp from './components/TerminalApp';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab)
 
 function App() {
     return (
