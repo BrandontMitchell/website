@@ -1,6 +1,9 @@
 import React from 'react';
+import '../css/Header.css';
 import {makeStyles} from '@material-ui/core/styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles({
     card: {
@@ -19,6 +22,7 @@ const useStyles = makeStyles({
         padding: '15px',
         marginRight: '5px'
     }
+    
 });
 
 const Header = () => {
@@ -36,16 +40,37 @@ const Header = () => {
                 <div>
                     <h1>Brandon Mitchell</h1>
                     <div className={classes.icons}>
-                        <FontAwesomeIcon icon="check-square"/>
+                        <Button href="https://github.com/BrandontMitchell">
+                            <div className="spotify">
                         <FontAwesomeIcon icon={
                             ['fab', 'github-square']
-                        }/>
-                        <FontAwesomeIcon icon={
-                            ['fab', 'spotify']
-                        }/>
-                        <FontAwesomeIcon icon={
-                            ['fab', 'flickr']
-                        }/>
+                        }
+                        size="4x"
+                        style={{color: "#000"}}/>
+                        
+                        </div>
+                        </Button>
+                         <Button href="https://open.spotify.com/show/4x5t8ruHBJ6by93IHrUfFN">
+                         <FontAwesomeIcon icon={
+                             ['fab', 'spotify']
+                         }
+                         size="4x"
+                         style={{color: "#1DB954"}}/>
+                         </Button>
+                         <Button href="https://www.flickr.com/photos/182839985@N04/">
+                         <FontAwesomeIcon icon={
+                             ['fab', 'flickr']
+                         }
+                         size="4x"
+                         style={{color: '#0063dc'}}/>
+                         </Button>
+                         <Button href="https://www.flickr.com/photos/182839985@N04/">
+                         <FontAwesomeIcon icon={faFileAlt}
+                         size="4x"
+                         style={{color: '#fff'}}/>
+                         </Button>
+                         
+                        
                     </div>
                 </div>
             </div>
