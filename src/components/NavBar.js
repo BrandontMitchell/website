@@ -1,5 +1,8 @@
 import React from 'react';
 import Header from './Header';
+import Home from './Home';
+import About from './About';
+import Hobbies from './Hobbies';
 import TerminalApp from './TerminalApp';
 import PropTypes from 'prop-types';
 import {makeStyles} from '@material-ui/core/styles';
@@ -88,16 +91,17 @@ const NavBar = () => {
             <TabPanel value={value}
                 index={0}>
                 <Header/>
+                <Home />
             </TabPanel>
             <TabPanel value={value}
                 index={1}>
                 <Header/>
-                Item Two
+                <About />
             </TabPanel>
             <TabPanel value={value}
                 index={2}>
                 <Header/>
-                Item Three
+                <Hobbies />
             </TabPanel>
             <TabPanel value={value}
                 index={3}>
