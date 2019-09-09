@@ -75,7 +75,7 @@ const Header = () => {
                          size="4x"
                          style={{color: '#ff0084'}}/>
                          </Button>
-                         <Button href="./bmitchell_resume_vf.pdf" download>
+                         <Button href="https://github.com/BrandontMitchell/resume/raw/master/bmitchellresume.pdf" download>
                          <FontAwesomeIcon icon={faFileAlt}
                          size="4x"
                          style={{color: '#fff'}}/>
