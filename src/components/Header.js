@@ -14,11 +14,10 @@ const useStyles = makeStyles({
         alignContent: 'center'
     },
     head: {
-        backgroundImage: 'linear-gradient(#ffebee, #bbdefb)'
+        backgroundImage: '#e0e2e6'
     },
     media: {
-        float: 'left',
-        width: 200
+        float: 'left'
     },
     info: {
         textAlign: 'center',
@@ -37,7 +36,7 @@ const Header = () => {
             <div className={
                 classes.media
             }>
-                <img alt="headshot" border="0" src="https://i.ibb.co/vqXKQBf/headshot.png" width="200"/>
+                <img alt="headshot" border="0" src="https://i.ibb.co/vqXKQBf/headshot.png" width="200vw" height="200vh"/>
             </div>
             <div className={
                 classes.info
@@ -85,7 +84,7 @@ const Header = () => {
                          </div>
                          </div>
                          <div>
-                             <br/><br/><br/><br/><br/><br/>
+                             <br/><br/><br/>
                          </div>
                 
             
