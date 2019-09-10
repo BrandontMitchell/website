@@ -54,7 +54,7 @@ const Header = () => {
                         
                         </div>
                         </Button>
-                        <Button href="https://www.flickr.com/photos/182839985@N04/">
+                        <Button href="https://www.linkedin.com/in/brandon-mitchell-aa1179149/">
                          <FontAwesomeIcon icon={
                              ['fab', 'linkedin']
                          }
