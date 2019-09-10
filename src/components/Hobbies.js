@@ -36,7 +36,7 @@ const Hobbies = () => {
                 </li>
                 <br/>
                 <li>
-
+                    Another hobby I have involves different puzzles. This is pretty random but gives you a good idea of what I do in my free time. I recently learned to finally solve a rubix cube, am a master <a href="https://www.youtube.com/watch?v=rIrl-FWeMZQ">Kendama</a> player (not actually, but it is still very enjoyable), and like to solve 3d puzzles (hayanama, models, wood, etc.).
                 </li>
             </ul>
 
